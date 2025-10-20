@@ -13,4 +13,7 @@ compile a C file in assembly
 compile a C fie with the name cisfun (that fake)
 
 ### 4-puts.c
-print "Programming is like building a multilingual puzzle
+print "Programming is like building a multilingual puzzle with puts
+
+### 5-printf.c
+print with proper grammar, but the outcome is a piece of art, with printf
