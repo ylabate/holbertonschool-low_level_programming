@@ -2,3 +2,6 @@
 
 ### 0-preprocessor
 run a C file through the preprocessor and save the result into the c file
+
+### 1-compiler
+compiles a c file but don't link 
