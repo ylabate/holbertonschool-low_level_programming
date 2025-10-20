@@ -11,3 +11,6 @@ compile a C file in assembly
 
 ### 3-name
 compile a C fie with the name cisfun (that fake)
+
+### 4-puts.c
+print "Programming is like building a multilingual puzzle
