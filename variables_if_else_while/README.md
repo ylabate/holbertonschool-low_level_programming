@@ -23,3 +23,6 @@ same as 5
 
 ### 7-print_tebahpla.c 
 same as 2 but reversed lolol
+
+### 8-print_base16.c 
+print all the number in base 16
