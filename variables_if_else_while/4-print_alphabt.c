@@ -8,13 +8,12 @@ int main(void)
 {
 	char a;
 
-	for (a = 'a'; a <= 'z'; )
+	for (a = 'a'; a <= 'z'; a++;)
 	{
-		if (a != 'q' && 'e' )
+		if (a != 'q' && a != 'e' )
 		{
 			putchar(a);
 		}
-	a++;
 	}
 	putchar('\n');
 return (0);
