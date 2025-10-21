@@ -8,3 +8,6 @@ doing some manipulation with random number
 
 ### 2-print_alphabet.c
 print the alphabet only with putchar :'(
+
+### 3-print_alphabets.c 
+print the alphabet in lowercase then uppercase with only putchar
