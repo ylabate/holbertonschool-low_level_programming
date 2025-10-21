@@ -17,3 +17,6 @@ print the alphabet with exeption on e and q
 
 ### 5-print_numbers.c 
 print all number from 0 to 9
+
+### 6-print_numberz.c 
+same as 5
