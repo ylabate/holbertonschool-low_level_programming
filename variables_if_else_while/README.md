@@ -5,3 +5,6 @@ gen a random number and say if it's negatif or positif or zero
 
 ### 1-last_digit.c
 doing some manipulation with random number
+
+### 2-print_alphabet.c
+print the alphabet only with putchar :'(
