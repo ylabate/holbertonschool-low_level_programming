@@ -11,3 +11,6 @@ print the alphabet only with putchar :'(
 
 ### 3-print_alphabets.c 
 print the alphabet in lowercase then uppercase with only putchar
+
+### 4-print_alphabt.c
+print the alphabet with exeption on e and q
