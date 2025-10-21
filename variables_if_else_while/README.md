@@ -14,3 +14,6 @@ print the alphabet in lowercase then uppercase with only putchar
 
 ### 4-print_alphabt.c
 print the alphabet with exeption on e and q
+
+### 5-print_numbers.c 
+print all number from 0 to 9
