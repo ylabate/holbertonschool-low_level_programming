@@ -20,3 +20,6 @@ print all number from 0 to 9
 
 ### 6-print_numberz.c 
 same as 5
+
+### 7-print_tebahpla.c 
+same as 2 but reversed lolol
