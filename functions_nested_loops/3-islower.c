@@ -11,9 +11,9 @@ int _islower(char e)
 {
 	int r;
 
-	if (e <= 'a' && e >= 'z')
-		r = 0;
-	else
+	if (e >= 97 && e <= 122)
 		r = 1;
+	else
+		r = 0;
 return (r);
 }
