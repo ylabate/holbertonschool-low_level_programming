@@ -4,6 +4,7 @@
 int _putchar();
 void print_alphabet(void);
 int _islower(char c);
+int _isalpha(int c);
 
 #endif
 
