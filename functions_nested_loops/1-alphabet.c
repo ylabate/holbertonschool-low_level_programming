@@ -17,5 +17,4 @@ void print_alphabet(void)
 		nbr++;
 	for (i = 0; i <= nbr; i++)
 		_putchar(a[i]);
-	_putchar('\n');
 }
