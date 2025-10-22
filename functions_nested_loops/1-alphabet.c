@@ -18,10 +18,4 @@ void print_alphabet(void)
 	for (i = 0; i <= nbr; i++)
 		_putchar(a[i]);
 	_putchar('\n');
-return;
-}
-int main(void)
-{
-	print_alphabet();
-return(0);
 }
