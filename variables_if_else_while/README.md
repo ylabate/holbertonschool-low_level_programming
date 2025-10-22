@@ -26,3 +26,6 @@ same as 2 but reversed lolol
 
 ### 8-print_base16.c 
 print all the number in base 16
+
+### 9-print_comb.c 
+print all possible combinaison of single digit in a special syntax
