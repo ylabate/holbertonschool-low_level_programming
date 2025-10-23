@@ -20,3 +20,6 @@ return 1, 0, or -1, if the entry is a more than zero, zero, or less than zero.
 
 ### 6-abs.c
 return the absolut of the integer
+
+### 7-print_last_digit.c
+print and return the last digit of a integer
