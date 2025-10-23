@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
 * print_last_digit - print the last digit of a list of digit
 * @n: is a int
