@@ -2,7 +2,8 @@
 
 /**
 * print_sign - check if the entry is greater equal or less than 0
-* @n: is a int 
+* @n: is a int
+* Return: return 1 0 or -1
 */
 int print_sign(int n)
 {
