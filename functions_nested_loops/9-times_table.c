@@ -1,8 +1,6 @@
 #include "main.h"
 /**
-* add - add the two entry together
-* @a: sasasasa
-* @b: sosoososs
+* times_table - show the all multiplication tables
 * Return: return the result
 */
 
