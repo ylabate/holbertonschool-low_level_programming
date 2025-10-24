@@ -17,8 +17,6 @@ int main(void)
 			for (c = 0; c < 10; c++)
 				for (d = 0; d < 10; d++)
 				{
-					if (a + b == c + d)
-						continue;
 					if (a + b > c + d)
 						continue;
 					putchar(a + '0');
