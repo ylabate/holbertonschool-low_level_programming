@@ -2,6 +2,8 @@
 
 /**
  * main - print numbers from 1 to 100 with Fizz, Buzz, and FizzBuzz conditions
+ *
+ * Return: Always 0 (Success)
  */
 
 int main(void)
