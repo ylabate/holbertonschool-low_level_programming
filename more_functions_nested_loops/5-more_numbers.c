@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* print_most_numbers - print all number from 0 to 9 except 2 and 4
+* more_numbers - print all number from 0 to 14
 */
 
 void more_numbers(void)
