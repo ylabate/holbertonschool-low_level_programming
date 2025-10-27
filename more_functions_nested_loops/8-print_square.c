@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * print_square - prints a square, followed by a new line.
+ * @a: the size of the square
  */
 
 void print_square(int a)
