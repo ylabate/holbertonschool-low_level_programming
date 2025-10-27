@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* _isdigit - check if the entry is an uppercase
+* mul - multiply a by b
 * @a: the first integer for multiplication
 * @b: the second integer for multiplication
 * Return: return the result
