@@ -1,2 +1,4 @@
 a.out
 test/
+*_putchar
+*-main.c
