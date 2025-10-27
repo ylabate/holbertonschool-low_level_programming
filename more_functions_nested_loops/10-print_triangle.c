@@ -2,11 +2,11 @@
 
 /**
  * print_triangle - prints a triangle, followed by a new line.
- * @size: the size of the square
+ * @n: the size of the triangle
  */
 
- void print_triangle(int n)
- {
+void print_triangle(int n)
+{
 	int a;
 	int b;
 
@@ -24,4 +24,4 @@
 		}
 	else
 		_putchar('\n');
- }
+}
