@@ -13,7 +13,9 @@ void rev_string(char *s)
 	int max;
 	char c[10];
 
-	max = _strlen(s); /**for (max = 0; s[max] != '\0'; max++)*/
+	for (max = 0; s[max] != '\0'; max++)
+		;
+
 	for (a = max; a != 0; a--)
 	{
 		c[b] = s[a - 1];
