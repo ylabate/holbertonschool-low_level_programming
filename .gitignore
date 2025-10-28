@@ -1,4 +1,4 @@
-a.out
-test/
-*_putchar
+*a.out
+test/*
+*_putchar.c
 *-main.c
