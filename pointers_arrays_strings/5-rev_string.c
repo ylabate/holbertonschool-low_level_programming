@@ -11,7 +11,7 @@ void rev_string(char *s)
 	int a;
 	int b = 0;
 	int max;
-	char c[10];
+	char c[1024];
 
 	for (max = 0; s[max] != '\0'; max++)
 		;
