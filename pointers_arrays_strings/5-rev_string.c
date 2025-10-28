@@ -23,5 +23,4 @@ void rev_string(char *s)
 	}
 	for (a = 0; a != max; a++)
 		s[a] = c[a];
-	_putchar('\n');
 }
