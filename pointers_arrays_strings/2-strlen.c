@@ -1,12 +1,13 @@
 #include "main.h"
 
 /**
- * swap_int - swap the two entry integer
- * @a: the first number to get swapped
- * @b: the second number to get swapped
+ * _strlen - returns the length of a string
+ * @s: the string to measure
+ *
+ * Return: the length of the string
  */
 
- int _strlen(char *s)
+int _strlen(char *s)
 {
 	int l;
 
