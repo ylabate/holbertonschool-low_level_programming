@@ -2,8 +2,9 @@
 #include <stdio.h>
 
 /**
- * puts_half - prints half of a string
- * @str: the string to print
+ * print_array - prints n elements of an array of integers
+ * @a: the array to print
+ * @n: the number of elements to print
  *
  * Return: nothing
  */
