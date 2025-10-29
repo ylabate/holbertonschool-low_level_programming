@@ -1,17 +1,17 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
- * _strncat - concatenates the string pointed to by src to the end of dest
+ * _strncpy - copies a string
  * @dest: the destination buffer
  * @src: the source string
- * @n: maximum number of bytes to use from src
+ * @n: maximum number of bytes to copy from src
  *
  * Return: pointer to dest
  */
 
-char *_strncat(char *dest, char *src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
-	for (; n != 0; n--)
-		dest[n] = char[n];
+	for (; n != -1; n--)
+		dest[n] = src[n];
 return (dest);
 }
