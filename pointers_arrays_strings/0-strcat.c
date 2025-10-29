@@ -21,6 +21,8 @@
 	for (i = 0; i != (nsrc + ndest); i++)
 	{
 		dest[(ndest + i)] = src[i];
+		if (src[i] == '\r' && src[i] == '\n')
+			i = nsrc;
 	}
 return (dest);
 }
