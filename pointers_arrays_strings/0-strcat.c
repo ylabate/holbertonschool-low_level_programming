@@ -14,14 +14,16 @@ char *_strcat(char *dest, char *src)
 	int nsrc;
 	int i;
 
-	for (ndest = 0; dest[ndest] != '\0' && ndest < 122; ndest++)
+	for (ndest = 0; dest[ndest] != '\0'; ndest++)
 	;
-	for (nsrc = 0; src[nsrc] != '\0' && nsrc < 122; nsrc++)
+	for (nsrc = 0; src[nsrc] != '\0'; nsrc++)
 	;
 	for (i = 0; i != (nsrc + ndest); i++)
 	{
-		if (nsrc != '\0')
-			dest[(ndest + i)] = src[i];
+		if (nsrc == '\0')
+			if (i != (nsrc + ndest))
+				continue;
+		dest[(ndest + i)] = src[i];
 	}
 return (dest);
 }
