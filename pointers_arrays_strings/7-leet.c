@@ -10,7 +10,7 @@ char *leet(char *str)
 {
 	int i;
 
-	for (i = 0; char != '\0'; i++)
-		char = char;
-return (char);
+	for (i = 0; str[i] != '\0'; i++)
+		str = str;
+return (str);
 }
