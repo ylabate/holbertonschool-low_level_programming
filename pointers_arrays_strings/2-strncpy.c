@@ -13,19 +13,20 @@ char *_strncpy(char *dest, char *src, int n)
 {
 	int i;
 
-	for (i = 0; i < n && dest[i] != '\0'; i++)
+	i = 0;
+	/* Copy from src to dest */
+	while (i < n && src[i] != '\0')
 	{
-		if (src[i] == '\0')
-			continue;
 		dest[i] = src[i];
+		i++;
 	}
+
+	/* Pad with null bytes */
 	while (i < n)
 	{
 		dest[i] = '\0';
 		i++;
 	}
-	if (dest[1] == '\0')
-		for (i = 1; dest[i] != '\0'; i++)
-			dest[i] = '\0';
-return (dest);
+
+	return (dest);
 }
