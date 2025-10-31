@@ -9,8 +9,13 @@
 char *leet(char *str)
 {
 	int i;
+	int j;
+	char base[] = "aAeEoOtTlL";
+	char leet[] = "4433007711";
 
 	for (i = 0; str[i] != '\0'; i++)
-		str = str;
+		for (j = 0; base[j] != '\0'; j++)
+			if (str[i] == base[j])
+				str[i] = leet[j];
 return (str);
 }
