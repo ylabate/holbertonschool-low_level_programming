@@ -28,10 +28,8 @@ int _atoi(char *s)
 			return (0);
 	}
 	for (n = 0; s[n] != 'n'; n++)
-	if (s[n] == 45)
-		{
+		if (s[n] == 45)
 			negative = -negative;
-		}
 	if (negative < 0)
 		return (-o);
 	return (o);
