@@ -19,7 +19,7 @@ int _atoi(char *s)
 	{
 		if ((s[i] >= 48 && s[i] <= 57))
 		{
-			for (ii = 0; s[i + ii] >= 48 && s[i + ii] <= 57; ii++)
+			for (; s[i + ii] >= 48 && s[i + ii] <= 57; ii++)
 			{
 				o = (s[i + ii] - 48 + (o * 10));
 			}
