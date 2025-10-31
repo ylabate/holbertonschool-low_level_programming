@@ -22,12 +22,12 @@ void print_number(int n)
 		if (n == -2147483648)
 		{
 			_putchar('2');
-			m = 147483648;
+			n = -147483648;
 		}
 		else
 			n = -n;
 	}
-	
+
 	m = n;
 
 	for (i = 1; m / i >= 10; i *= 10)
