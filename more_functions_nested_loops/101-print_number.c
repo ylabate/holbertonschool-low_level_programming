@@ -24,8 +24,7 @@ void print_number(int n)
 			_putchar('2');
 			n = -147483648;
 		}
-		else
-			n = -n;
+		n = -n;
 	}
 
 	m = n;
