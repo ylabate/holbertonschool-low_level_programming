@@ -1,10 +1,9 @@
 #include "main.h"
-#include <stdio.h>
 /**
- * _atoi - converts a string to an integer
- * @s: pointer to the string
+ * print_number - prints an integer
+ * @n: the integer to print
  *
- * Return: the integer value
+ * Return: void
  */
 
 void print_number(int n)
@@ -13,7 +12,10 @@ void print_number(int n)
 	int m;
 
 	if (n == 0)
+	{
 		_putchar('0');
+		return;
+	}
 	if (n < 0)
 	{
 		_putchar('-');
