@@ -12,16 +12,8 @@ int _atoi(char *s)
 	int o = 0;
 	int i;
 	int ii = 0;
-	int negatif = 1;
-
-	for (i = 0; s[i] != '\0'; i++)
-		if (s[i] == 45)
-		{
-			if (negatif > 0)
-				negatif = -1;
-			else
-				negatif = 1;
-		}
+	int negative = 1;
+	int n;
 
 	for (i = 0; ii == 0; i++)
 	{
@@ -35,7 +27,12 @@ int _atoi(char *s)
 		else if (s[i] == '\0')
 			return (0);
 	}
-	if (negatif < 0)
-		o = (o - (o * 2));
-return (o);
+	for (n = 0; s[n] != 'n'; n++)
+	if (s[n] == 45)
+		{
+			negative = -negative;
+		}
+	if (negative < 0)
+		return (-o);
+	return (o);
 }
