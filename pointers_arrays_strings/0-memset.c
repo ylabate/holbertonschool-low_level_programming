@@ -6,6 +6,9 @@
  * @b: the constant byte to fill with
  * @n: number of bytes to be filled
  *
+ * Description: Fills the first n bytes of the memory area pointed to by s
+ * with the constant byte b
+ *
  * Return: pointer to the memory area s
  */
 
