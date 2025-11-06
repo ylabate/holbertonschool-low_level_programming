@@ -2,11 +2,11 @@
 #include <stdlib.h>
 
 /**
- * main - prints the program name
+ * main - prints the minimum number of coins to make change
  * @argc: argument count
  * @argv: argument vector
  *
- * Return: Always 0 (Success)
+ * Return: 0 on success, 1 on error
  */
 
 int main(int argc, char *argv[])
@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 
 	if (x <= 0)
 	{
-		printf("0");
+		printf("0\n");
 		return (0);
 	}
 
