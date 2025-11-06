@@ -56,6 +56,6 @@ int main(int argc, char *argv[])
 			a++;
 		}
 	}
-printf("\n%d\n", a);
+printf("%d\n", a);
 return (0);
 }
