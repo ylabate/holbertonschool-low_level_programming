@@ -28,33 +28,18 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 
-	while(x != 0)
+	for (; x != 0; a++)
 	{
 		if (x >= 25)
-		{
 			x = x - 25;
-			a++;
-		}
 		else if (x >= 10)
-		{
 			x = x - 10;
-			a++;
-		}
 		else if (x >= 5)
-		{
 			x = x - 5;
-			a++;
-		}
 		else if (x >= 2)
-		{
 			x = x - 2;
-			a++;
-		}
 		else
-		{
 			x = x - 1;
-			a++;
-		}
 	}
 printf("%d\n", a);
 return (0);
