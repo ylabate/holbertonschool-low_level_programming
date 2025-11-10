@@ -3,12 +3,11 @@
 #include <stdlib.h>
 
 /**
- * str_concat - concatenates two strings
- * @s1: first string
- * @s2: second string
+ * free_grid - frees a 2 dimensional grid
+ * @grid: pointer to the grid to free
+ * @height: height of the grid
  *
- * Return: pointer to newly allocated space in memory containing
- * concatenated string
+ * Return: nothing
  */
 
 void free_grid(int **grid, int height)
