@@ -34,7 +34,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 /* fait une copie de s2 dans s a la suite de strlen de s1*/
 	for (j = 0 ; s2[j] != '\0' && j < n; j++)
 		s[i + j] = s2[j];
-/* rajoute un "fin de chaine de caractère" */
+/* rajoute un caractère "fin de chaine de caractère" */
 	s[i + j] = '\0';
 return (s);
 }
