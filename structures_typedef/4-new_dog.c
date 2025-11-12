@@ -1,0 +1,30 @@
+#include "dog.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * new_dog - creates a new dog
+ * @name: name of the dog
+ * @age: age of the dog
+ * @owner: owner of the dog
+ *
+ * Return: pointer to the new dog, or NULL if it fails
+ */
+
+dog_t *new_dog(char *name, float age, char *owner)
+{
+	dog_t *newdog;
+
+	newdog = malloc(sizeof(dog_t));
+	if (newdog == NULL)
+		return (NULL);
+	if (name != NULL && owner != NULL)
+	{
+		newdog->name = name;
+		newdog->age = age;
+		newdog->owner = owner;
+	}
+	else
+		return (NULL);
+	return (newdog);
+}
