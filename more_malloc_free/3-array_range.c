@@ -3,9 +3,9 @@
 #include <stdio.h>
 
 /**
- * _calloc - allocates memory for an array
- * @nmemb: number of elements
- * @size: size of each element
+ * array_range - creates an array of integers
+ * @min: minimum value (included)
+ * @max: maximum value (included)
  *
  * Return: pointer to allocated memory, or NULL on failure
  */
@@ -18,11 +18,12 @@ int *array_range(int min, int max)
 	if (max < min)
 		return (NULL);
 
-	s = malloc(sizeof(int) * (max - min));
+	s = malloc(sizeof(int) * (max - min + 1));
+	if (s == NULL)
+		return (NULL);
 
 	for (i = 0; min < max ; min++, i++)
-	{
 		s[i] = min;
-	}
+	s[i] = min;
 return (s);
 }
