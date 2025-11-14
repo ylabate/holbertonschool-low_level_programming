@@ -30,7 +30,7 @@ char **strtow(char *str)
 		if (str[i] != ' ')
 		{
 			/* compte la taille de chaque mot*/
-			for (; str[i] != ' ' ; i++)
+			for (; str[i] != ' ' && str[i] != '\0'; i++)
 			;
 			c++;
 		}
@@ -43,14 +43,14 @@ char **strtow(char *str)
 		{
 			a = i;
 			/* compte la taille de chaque mot*/
-			for (j = 0; str[i] != ' ' ; i++, j++)
+			for (j = 0; str[i] != ' ' && str[i] != '\0'; i++, j++)
 			;
 			/* alloue la mémoire pour chaque mots*/
-			ptr[c] = malloc(sizeof(char) * j);
+			ptr[c] = malloc(j + 1);
 			for (h = 0 ; h < j ; h++)
 				ptr[c][h] = str[a + h];
 			c++;
 		}
-
+ptr[c] = '\0';
 return (ptr);
 }
