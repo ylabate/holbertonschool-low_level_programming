@@ -46,11 +46,11 @@ char **strtow(char *str)
 			for (j = 0; str[i] != ' ' ; i++, j++)
 			;
 			/* alloue la mémoire pour chaque mots*/
-			ptr[c] = malloc(sizeof(char) * j);
+			ptr[c] = malloc(j + 1);
 			for (h = 0 ; h < j ; h++)
 				ptr[c][h] = str[a + h];
 			c++;
 		}
-
+ptr[c] = NULL;
 return (ptr);
 }
