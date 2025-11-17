@@ -4,3 +4,4 @@ test/*
 *main.c
 .vscode/
 *gch
+!function_pointers/3-main.c
