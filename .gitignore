@@ -3,3 +3,4 @@ test/*
 *_putchar.c
 *main.c
 .vscode/
+*gch
