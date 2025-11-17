@@ -19,6 +19,9 @@ int (*get_op_func(char *s))(int, int)
 		{NULL, NULL}
 	};
 	int i = 0;
+
+	if (s == NULL || s[1] != '\0')
+		return (NULL);
 	/* browse ops to compare it with s */
 	while (ops[i].op != NULL && *ops[i].op != *s)
 	{
