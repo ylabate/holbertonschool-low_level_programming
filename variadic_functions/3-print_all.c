@@ -41,21 +41,23 @@ void print_all(const char *const format, ...)
 		{
 			case 'c':
 				int_print = va_arg(args, int);
-				printf("%c, ", int_print);
+				printf("%c", int_print);
 				break;
 			case 'i':
 				int_print = va_arg(args, int);
-				printf("%d, ", int_print);
+				printf("%d", int_print);
 				break;
 			case 'f':
 				float_print = va_arg(args, double);
-				printf("%f, ", float_print);
+				printf("%f", float_print);
 				break;
 			case 's':
 				string_print = va_arg(args, char *);
-				printf("%s, ", string_print);
+				printf("%s", string_print);
 				break;
 		}
+		if (i + 1 < _strlen(format))
+			printf(", ");
 		i++;
 	}
 	printf("\n");
