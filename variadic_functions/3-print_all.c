@@ -55,6 +55,9 @@ void print_all(const char *const format, ...)
 				string_print = va_arg(args, char *);
 				printf("%s", string_print);
 				break;
+			default:
+				i++;
+				continue;
 		}
 		if (i + 1 < _strlen(format))
 			printf(", ");
