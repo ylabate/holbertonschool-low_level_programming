@@ -53,6 +53,11 @@ void print_all(const char *const format, ...)
 				break;
 			case 's':
 				string_print = va_arg(args, char *);
+				if (string_print == NULL)
+				{
+					printf("(nil)");
+					break;
+				}
 				printf("%s", string_print);
 				break;
 			default:
