@@ -16,7 +16,7 @@ int _strlen(const char *s)
 
 	while (s[l] != '\0')
 		l++;
-return (l);
+	return (l);
 }
 
 /**
@@ -26,7 +26,7 @@ return (l);
  * Return: void
  */
 
-void print_all(const char * const format, ...)
+void print_all(const char *const format, ...)
 {
 	va_list args;
 	int i = 0;
@@ -37,30 +37,28 @@ void print_all(const char * const format, ...)
 	va_start(args, format);
 	while (i < _strlen(format))
 	{
-		if (format[i] == 'c')
+		switch (format[i])
 		{
-			int_print = va_arg(args, int);
-			printf("%c, ", int_print);
-		}
-		if (format[i] == 'i')
-		{
-			int_print = va_arg(args, int);
-			printf("%d, ", int_print);
-		}
-		else if (format[i] == 'f')
-		{
-			float_print = va_arg(args, double);
-			printf("%f, ", float_print);
-		}
-		else if (format[i] == 's')
-		{
-			string_print = va_arg(args, char *);
-			printf("%s, ", string_print);
+			case 'c':
+				int_print = va_arg(args, int);
+				printf("%c, ", int_print);
+				break;
+			case 'i':
+				int_print = va_arg(args, int);
+				printf("%d, ", int_print);
+				break;
+			case 'f':
+				float_print = va_arg(args, double);
+				printf("%f, ", float_print);
+				break;
+			case 's':
+				string_print = va_arg(args, char *);
+				printf("%s, ", string_print);
+				break;
 		}
 		i++;
 	}
 	printf("\n");
 
-va_end(args);
-return;
+	va_end(args);
 }
