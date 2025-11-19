@@ -12,10 +12,10 @@
 
 int _strlen(const char *s)
 {
-	int l;
+	int l = 0;
 
-	for (l = 0; s[l] != '\0'; l++)
-		;
+	while (s[l] != '\0')
+		l++;
 return (l);
 }
 
@@ -29,13 +29,13 @@ return (l);
 void print_all(const char * const format, ...)
 {
 	va_list args;
-	int i;
+	int i = 0;
 	int int_print;
 	double float_print;
 	char *string_print;
 
 	va_start(args, format);
-	for (i = 0; i < _strlen(format); i++)
+	while (i < _strlen(format))
 	{
 		if (format[i] == 'c')
 		{
@@ -57,6 +57,7 @@ void print_all(const char * const format, ...)
 			string_print = va_arg(args, char *);
 			printf("%s, ", string_print);
 		}
+		i++;
 	}
 	printf("\n");
 
