@@ -4,6 +4,22 @@
 #include <stdlib.h>
 
 /**
+ * _strlen - returns the length of a string
+ * @s: the string to measure
+ *
+ * Return: the length of the string
+ */
+
+int _strlen(char *s)
+{
+	int l;
+
+	for (l = 0; s[l] != '\0'; l++)
+		;
+return (l);
+}
+
+/**
  * print_all - affiche tout selon le format donné
  * @format: liste des types d'arguments à imprimer
  *
@@ -13,7 +29,7 @@
 void print_all(const char * const format, ...)
 {
 	va_list args;
-	unsigned int i;
+	size_t i;
 	int int_print;
 	double float_print;
 	char *string_print;
