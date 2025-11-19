@@ -5,3 +5,4 @@ test/*
 .vscode/
 *gch
 !function_pointers/3-main.c
+.github*
