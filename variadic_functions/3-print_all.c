@@ -10,7 +10,7 @@
  * Return: the length of the string
  */
 
-int _strlen(char *s)
+int _strlen(const char *s)
 {
 	int l;
 
@@ -29,13 +29,13 @@ return (l);
 void print_all(const char * const format, ...)
 {
 	va_list args;
-	size_t i;
+	int i;
 	int int_print;
 	double float_print;
 	char *string_print;
 
 	va_start(args, format);
-	for (i = 0; i < strlen(format); i++)
+	for (i = 0; i < _strlen(format); i++)
 	{
 		if (format[i] == 'c')
 		{
