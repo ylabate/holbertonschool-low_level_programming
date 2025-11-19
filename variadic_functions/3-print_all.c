@@ -34,10 +34,8 @@ void print_all(const char *const format, ...)
 	double float_print;
 	char *string_print;
 
-	if (format == NULL)
-		return;
 	va_start(args, format);
-	while (i < _strlen(format))
+	while (format != NULL && i < _strlen(format))
 	{
 		switch (format[i])
 		{
