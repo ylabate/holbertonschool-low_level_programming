@@ -6,6 +6,7 @@
  *
  * Return: la somme de tous les paramètres, ou 0 si n == 0
  */
+
 int sum_them_all(const unsigned int n, ...)
 {
 	int sum = 0;
