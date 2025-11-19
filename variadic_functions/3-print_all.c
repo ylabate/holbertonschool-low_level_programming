@@ -1,7 +1,5 @@
 #include <stdarg.h>
 #include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
 
 /**
  * _strlen - returns the length of a string
@@ -9,7 +7,6 @@
  *
  * Return: the length of the string
  */
-
 int _strlen(const char *s)
 {
 	int l = 0;
@@ -20,21 +17,19 @@ int _strlen(const char *s)
 }
 
 /**
- * print_all - affiche tout selon le format donné
- * @format: liste des types d'arguments à imprimer
+ * _print - prints arguments according to format
+ * @format: format string containing the list of types
+ * @args: variable argument list
  *
  * Return: void
  */
-
-void print_all(const char *const format, ...)
+void _print(const char *format, va_list args)
 {
-	va_list args;
 	int i = 0;
 	int int_print;
 	double float_print;
 	char *string_print;
 
-	va_start(args, format);
 	while (format != NULL && i < _strlen(format))
 	{
 		switch (format[i])
@@ -68,7 +63,23 @@ void print_all(const char *const format, ...)
 			printf(", ");
 		i++;
 	}
-	printf("\n");
+}
 
+/**
+ * print_all - affiche tout selon le format donné
+ * @format: liste des types d'arguments à imprimer
+ *
+ * Return: void
+ */
+
+void print_all(const char *const format, ...)
+{
+	va_list args;
+
+	va_start(args, format);
+
+	_print(format, args);
+
+	printf("\n");
 	va_end(args);
 }
