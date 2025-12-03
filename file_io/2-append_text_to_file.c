@@ -9,7 +9,7 @@
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
-	int fd;
+	int fd, length;
 
 	if (filename == NULL)
 		return (-1);
@@ -19,6 +19,8 @@ int append_text_to_file(const char *filename, char *text_content)
 	fd = open(filename, O_RDWR | O_APPEND);
 	if (fd == -1)
 		return (-1);
-	dprintf(fd, "%s", text_content);
+	for (length = 0 ; text_content[length] != '\0' ; length++)
+	;
+	write(fd, text_content, length);
 	return (1);
 }
