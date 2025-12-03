@@ -20,7 +20,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	for (printed_char = 0 ; buffer[printed_char] != '\0' ; printed_char++)
 	;
 
-	write(1, buffer, printed_char);
+	write(STDOUT_FILENO, buffer, printed_char);
 
 	free(buffer);
 	return (printed_char);
