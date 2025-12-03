@@ -3,6 +3,13 @@
 #include <fcntl.h>
 #include <stdio.h>
 
+/**
+ * main - copies the content of a file to another file
+ * @ac: number of arguments
+ * @av: array of arguments
+ *
+ * Return: 0 on success, exits with code on error
+ */
 int main(int ac, char **av)
 {
 	int file_from, file_to, length_buffer, checkexit;
@@ -13,7 +20,6 @@ int main(int ac, char **av)
 		write(STDERR_FILENO, "Usage: cp file_from file_to\n", 28);
 		exit(97);
 	}
-/* make the pipe to the file from*/
 	file_from = open(av[1], O_RDONLY);
 	if (file_from == -1)
 	{
@@ -30,9 +36,7 @@ int main(int ac, char **av)
 	}
 
 	while ((length_buffer = read(file_from, buffer, 1024)) > 0)
-	{
 		write(file_to, buffer, length_buffer);
-	}
 
 	checkexit = close(file_from);
 	if (checkexit == -1)
@@ -47,6 +51,5 @@ int main(int ac, char **av)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_to);
 		exit(100);
 	}
-
 	return (0);
 }
